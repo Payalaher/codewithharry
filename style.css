@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper{
+
+    height: fit-content;
+    width: 100%;
+    /* background-color: crimson;     */
+}
+
+.dekstop{
+    display: none;
+}
+
+.navigation{
+    /* position: fixed; */
+    width: 100%;
+}
+
+.navm{
+    height: 80px;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    color: #6b21a8;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.left-navm{
+    height: 100%;
+    width: 45%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.left-navm h2{
+    font-size: 5.2vw;
+
+}
+
+.left-navm i{
+    font-size: 7vw;
+    font-weight: 300;
+}
+
+.mid-navm{
+    height: 100%;
+    width: 30%;
+    /* background-color: lawngreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-navm h2{
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.mid-navm i{
+    font-size: 7vw;
+}
+
+.right-navm{
+    height: 100%;
+    width: 25%;
+    /* background-color: lightgray; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2.5vw;
+}
+
+.right-navm button{
+    padding:2vw 3vw;
+    font-size: 5vw;
+    border:none ;
+    border-radius: 5px;
+    background-color: #6b21a8;
+    color: white;
+}
+
+.small-navm{
+    height: 7vh;
+    width: 100%;
+    /* background-color: lightseagreen; */
+    display: flex;
+   
+    box-shadow: 1px 15px 10px -18px #111;
+}
+
+.left-small-navm{
+    height: 100%;
+    width: 50%;
+    /* background-color: lime; */
+    display: flex;
+    align-items: center;
+    padding:0 3vw;
+}
+
+.right-small-navm{
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(255, 221, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0 3vw;
+}
+
+.left-small-navm i, .right-small-navm i{
+    font-size:6.5vw ;
+    color: #6b21a8;
+}
+
+.welcome{
+    /* margin-top: -3vh; */
+    height: 50vh;
+    width: 100%;
+    /* background-color: rgb(187, 250, 135); */
+}
+
+
+.left-wel{
+    height: 100%;
+    width: 100%;
+    /* background-color: lightpink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.left-wel h2{
+    width: 75%;
+    text-align: center;
+    font-size: 10vw;
+    color: #393939;
+    line-height: 1.1;
+}
+
+.left-wel h2 span{
+    font-size: 10vw;
+    color: #6b21a8;
+}
+
+.left-wel h2 p{
+    font-size: 6vw;
+}
+
+.left-wel p span{
+    font-size: 6.3vw;
+}
+
+.left-wel p{
+    text-align: center;
+   width: 75%;
+   color: #686868;
+}
+
+.btn{
+    margin-top: 5vw;
+    gap:3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button{
+    padding:2.5vw 4vw;
+    font-size: 4vw;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.free{
+    color: white;
+    background-color: rgb(21, 21, 21);
+}
+
+.blog{
+    background-color: #9CA3AF;
+    font-weight: 400;
+    color: #272727;
+}
+
+.right-wel{
+    display: none;
+}
+
+.Recommended{
+    height: 9.5vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Recommended h2{
+    font-size: 8.5vw;
+    text-align: center;
+    width: 50%;
+    font-weight: 500;
+}
+
+.cards{
+    height: 210vh;
+    width: 100%;
+    /* background-color: lightskyblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 5vw;
+    padding: 3.5vw 0vw;
+}
+
+.card{
+    height: 47%;
+    width: 80%;
+    /* background-color: lightpink; */
+    border-radius: 15px;
+    display: flex;
+   flex-direction: column;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+.upper-card{
+    height: 40%;
+    width: 100%;
+    /* background-color: lightsalmon; */
+    background-image: url(2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lower-card{
+    height: 60%;
+    width: 100%;
+    /* background-color: darkseagreen; */
+    padding: 3vw;
+    gap: 1.5VW;
+}
+
+.lower-card h2{
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.lower-card h3{
+    font-size: 5.4vw;
+    width: 70%;
+    font-weight: 400;
+    margin: 1.5VW 0;
+}
+
+.lower-card P{
+    font-size: 4.8VW;
+    color: rgb(153, 153, 153);
+}
+
+.Start{
+    margin-top: 10vw;
+    padding: 2.5vw 3.9vw;
+    font-size: 4.5vw;
+    border-radius: 20px;
+    border: none;
+    background-color: #6b21a8;
+    color: white;
+    font-weight: 600;
+}
+
+.md{
+    margin-top: 10vw !important;
+}
+
+.sta{
+    margin-top: 15vw; 
+}
+
+.second-card{
+
+    background-image: url(3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.third-card{
+
+    background-image: url(4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+
+.Testimonials{
+    height: 10vh;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Testimonials h2{
+    font-size: 8.9vw;
+    text-align: center;
+    width: 50%;
+    font-weight: 500;
+}
+
+.quotes{
+    height: 90vh;
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 3vw 0;
+}
+
+.quotes-content{
+    height: 48%;
+    width: 88%;
+    background-color: #F3F4F6;
+    padding: 5vw;
+    gap: 15vw;
+    border-radius: 10px;
+
+}
+
+.quotes-content i{
+    margin-top: 5vw;
+    font-size: 10vw;
+    color: rgb(144, 144, 144);
+}
+
+.quotes-content p{
+    font-size: 4.5vw;
+    line-height: 6.5vw;
+    color: #8d8d8d;
+}
+
+.web{
+    margin-top: 9vw;
+}
+
+.web h2{
+    font-weight: 400;
+    font-size: 5vw;
+}
+
+.web p{
+    font-size: 4vw;
+}
+
+.copyr{
+    height: 20vh;
+    width: 100%;
+    /* background-color: coral; */
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+.circle{
+    height: 11vw;
+    width: 11vw;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    background-image: url(5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-copy{
+
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.mid-copy p{
+    font-size: 4.8vw;
+    color: #686868;
+}
+
+.right-copy i{
+    font-size: 5vw;
+   margin: 0 2vw;
+   color: #393939;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1024px){
+    .mobile{
+        display: none;
+    }
+
+    .dekstop{
+        display: flex;
+    }
+
+    .navigation{
+        /* position: fixed; */
+        width: 100%;
+    }
+
+    .nav{
+        height: 90px;
+        width: 100%;
+        /* background-color: lightpink; */
+        border: 1px solid lightgrey;
+    }
+
+    .left-nav{
+        height: 100%;
+        width: 30%;
+        /* background-color: lightyellow; */
+        display: flex;
+        align-items: center;
+        padding-left: 1vw;
+        gap: .3vw;
+        color: #6b21a8;
+    }
+
+    .left-nav h2{
+        font-size: 1.3vw;
+        font-weight: 500;
+    }
+
+    .left-nav i{
+        font-size: 1.6vw;
+    }
+
+    .right-nav{
+        height: 100%;
+        width: 70%;
+        /* background-color: rgb(237, 255, 224); */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 1vw;
+        gap: 1.2vw;
+    }
+
+    .right-nav a{
+        font-size: 1vw;
+        text-decoration: none;
+        color: #686868;
+    }
+
+    .right-nav i{
+        font-size: 1.8vw;
+        color: #872bd2;
+    }
+
+   
+
+    .btnl button{
+
+        padding: .6vw 1vw;
+        margin: 0 .2vw;
+        font-size: 1vw;
+        border: none;
+        background-color: #872bd2;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .small-nav{
+        height: 6vh;
+        /* background-color: limegreen; */
+         
+    box-shadow: 1px 15px 10px -18px #111;
+    }
+
+    .left-small-nav{
+        height: 100%;
+        width: 20%;
+        /* background-color: lightsalmon; */
+        padding-left: 1.5vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-small-nav i, .right-small-nav i{
+        font-size: 1.4vw;
+        color: #6b21a8;
+    }
+
+    .mid-small-nav{
+        height: 100%;
+        width: 60%;
+        /* background-color: rgb(255, 253, 122); */
+        /* padding-left: 1.5vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.3vw;
+    }
+
+    .mid-small-nav a{
+        font-size: .9vw;
+        text-decoration: none;
+        font-weight: 500;
+        color: #872bd2;
+    }
+
+    .right-small-nav{
+        height: 100%;
+        width: 20%;
+        /* background-color: lightsalmon; */
+        padding-right: 1.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .welcome{
+        height: 60vh;
+        width: 100%;
+        /* background-color: lawngreen; */
+        display: flex;
+        gap: 0vw;
+        
+
+    }
+
+    .left-wel{
+        height: 100%;
+        width: 50%;
+        /* background-color: brown; */
+    }
+
+    .left-wel h2{
+        font-size: 2.2vw;
+        width: 90%;
+        line-height: 1.2;
+        /* text-align: left; */
+        margin-left: -2.5vw;
+       
+    }
+
+    .left-wel h2 span{
+        font-size: 2.2vw;
+        color: #872bd2;
+    }
+
+    .left-wel h2 p{
+        font-size: 1.5vw;
+        color: rgb(34, 34, 34);
+        /* text-align: left; */
+        margin-left: -3.8vw;
+    }
+
+    .left-wel p span{
+        font-size: 1.5vw;
+    }
+
+    .left-wel .con{
+        margin-top: -1.8vw;
+        text-align: left;
+        margin-left: 7vw;
+        font-size: 1.1vw;
+        width: 70%;
+    }
+
+    .right-wel{
+        display: flex;
+        height: 100%;
+        width: 50%;
+        /* background-color: crimson; */
+        background-image: url(1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .btn{
+        margin-top: -.8vw;
+        gap: .8vw;
+        margin-left: -13vw;
+    }
+
+    .btn button{
+        padding:.5vw 1vw;
+        font-size: .8vw;
+        font-weight: 500;
+    }
+
+    .blog{
+        background-color: lightgrey;
+    }
+
+    .Recommended{
+        height: 8vh;
+        width: 100%;
+        /* background-color: blanchedalmond; */
+    }
+
+    .Recommended h2{
+        font-size: 1.9vw;
+        font-weight: 500;
+    }
+
+
+    .cards{
+        height: 65vh;
+        width: 100%;
+        /* background-color: lawngreen; */
+        display: flex;
+        flex-direction: row;
+        padding: 1vw;
+        gap: 2.5vw;
+    }
+
+    .card{
+        height: 100%;
+        width: 20%;
+        /* background-color: darkgoldenrod; */
+    }
+
+    .lower-card{
+        padding: 1vw;
+    }
+
+    .lower-card h2{
+       font-size: 1vw;
+
+    }
+
+    .lower-card h3{
+        font-size: 1vw;
+        margin: .5vw 0;
+    }
+
+    .lower-card p{
+        font-size: 1vw;
+    }
+
+    .button{
+        /* margin-top: 1vw;
+        padding:.5vw 1vw;
+        font-size: 1vw; */
+
+
+        display: flex;
+        align-items: center;
+    }
+
+
+
+   .Start{
+    margin-top: 1.9vw;
+        padding:.5vw 1vw;
+        font-size: 1vw;
+    }
+
+    .sta{
+        margin-top: 2.9vw;
+    }
+
+    .mad{
+        margin-top: .8vw !important;
+    }
+
+    .Testimonials{
+        height: 10vh;
+        width: 100%;
+        /* background-color: blanchedalmond; */
+    }
+
+    .Testimonials h2{
+        font-size: 1.9vw;
+        font-weight: 500;
+    }
+
+    .quotes{
+        height: 35vh;
+        width: 100%;
+        /* background-color: lightpink; */
+        display: flex;
+        flex-direction: row;
+        padding: 1vw;
+        gap: 2vw;
+    }
+
+    .quotes-content{
+        padding: 1vw;
+        height: 100%;
+        width: 33%;
+        background-color:#F3F4F6;
+        border-radius: 5px;
+    }
+
+    .quotes-content i{
+        font-size: 1.8vw;
+        margin-bottom: 3vw;
+    }
+
+    .quotes-content p{
+        font-size: 1vw;
+        line-height: 1.3;
+    }
+
+    .web {
+        margin-top: 1.5vw;
+    }
+
+    .web h2{
+        font-size: 1vw;
+        color: #272727;
+    }
+
+    .web p{
+        font-size: .8vw;
+        line-height: 1.5;
+    }
+
+
+    .copyr{
+        height: 8vh;
+        /* background-color: lawngreen; */
+        width: 100%;
+        gap: 0vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .circle{
+        height: 2vw;
+        width: 2vw;
+        /* background-color: aqua; */
+        border-radius: 50%;
+        background-image: url(5.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .left-copy{
+        height: 100%;
+        width: 20%;
+        background-color: crimson;
+        display: flex;
+        align-items: center;
+        gap: .5vw;
+        /* margin-left: 1vw; */
+        
+    }
+
+    .left-copy h2{
+        font-size: 1.2vw;
+        font-weight: 500;
+    }
+    
+
+    .mid-copy{
+        height: 100%;
+        width: 30%;
+        background-color: rgb(220, 20, 200);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-right: 1px solid grey;
+    }
+
+    .mid-copy p{
+        font-size: 1vw;
+        color: #686868;
+        text-align: left;
+    }
+    
+    .right-copy{
+        height: 100%;
+        width: 20%;
+        background-color: crimson;
+        display: flex;
+        align-items: center; 
+        justify-content: flex-end; 
+    }
+
+    .right-copy i{
+        font-size: 1.2vw;
+       margin: 0 .2vw;
+       color: #393939;
+    }
+
+
+
+}
